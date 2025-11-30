@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undertone Analysis & Dress Recommendation</title>
     <style>
-
-        
         /* Body Shape Detection Styles */
         .body-shape-section {
             margin-top: 30px;
@@ -285,6 +283,12 @@
                     <div class="progress-step" id="step-2">2</div>
                     <div class="progress-step" id="step-3">3</div>
                     <div class="progress-step" id="step-4">4</div>
+                    <div class="progress-step" id="step-5">5</div>
+                    <div class="progress-step" id="step-6">6</div>
+                    <div class="progress-step" id="step-7">7</div>
+                    <div class="progress-step" id="step-8">8</div>
+                    <div class="progress-step" id="step-9">9</div>
+                    <div class="progress-step" id="step-10">10</div>
                 </div>
                 
                 <!-- Step 1: Waist to Hip Ratio -->
@@ -393,8 +397,176 @@
                     <div class="navigation">
                         <button class="btn btn-secondary" id="prev4">Previous</button>
                         <div>
-                            <button class="btn btn-primary" id="calculate">Calculate My Body Shape</button>
+                            <button class="btn btn-primary" id="next4">Next</button>
                             <button class="btn btn-refresh" id="refresh4">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 5: Body Proportions -->
+                <div class="form-step" id="step5">
+                    <h2>How would you describe your overall body proportions?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="proportions" value="balanced">
+                            <span>My upper and lower body are balanced</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proportions" value="top-heavy">
+                            <span>My upper body is more prominent</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proportions" value="bottom-heavy">
+                            <span>My lower body is more prominent</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proportions" value="straight">
+                            <span>My body is fairly straight with minimal curves</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev5">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="next5">Next</button>
+                            <button class="btn btn-refresh" id="refresh5">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 6: Leg Length -->
+                <div class="form-step" id="step6">
+                    <h2>How would you describe your leg length in relation to your torso?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="leg-length" value="long">
+                            <span>My legs are longer than my torso</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="leg-length" value="balanced">
+                            <span>My legs and torso are balanced</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="leg-length" value="short">
+                            <span>My legs are shorter than my torso</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev6">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="next6">Next</button>
+                            <button class="btn btn-refresh" id="refresh6">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 7: Arm Length -->
+                <div class="form-step" id="step7">
+                    <h2>How would you describe your arm length?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="arm-length" value="long">
+                            <span>My arms are longer than average</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="arm-length" value="average">
+                            <span>My arms are average length</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="arm-length" value="short">
+                            <span>My arms are shorter than average</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev7">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="next7">Next</button>
+                            <button class="btn btn-refresh" id="refresh7">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 8: Height -->
+                <div class="form-step" id="step8">
+                    <h2>How would you describe your height?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="height" value="petite">
+                            <span>I'm petite (under 5'4")</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="height" value="average">
+                            <span>I'm average height (5'4" to 5'7")</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="height" value="tall">
+                            <span>I'm tall (over 5'7")</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev8">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="next8">Next</button>
+                            <button class="btn btn-refresh" id="refresh8">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 9: Bone Structure -->
+                <div class="form-step" id="step9">
+                    <h2>How would you describe your bone structure?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="bone-structure" value="delicate">
+                            <span>Delicate and fine-boned</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="bone-structure" value="medium">
+                            <span>Medium bone structure</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="bone-structure" value="large">
+                            <span>Large and sturdy bone structure</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev9">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="next9">Next</button>
+                            <button class="btn btn-refresh" id="refresh9">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 10: Overall Body Type -->
+                <div class="form-step" id="step10">
+                    <h2>Which celebrity body type do you most identify with?</h2>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="celebrity-type" value="hourglass">
+                            <span>Marilyn Monroe, Scarlett Johansson (curvy with defined waist)</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="celebrity-type" value="pear">
+                            <span>Jennifer Lopez, Rihanna (hips wider than shoulders)</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="celebrity-type" value="inverted-triangle">
+                            <span>Angelina Jolie, Naomi Campbell (broad shoulders)</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="celebrity-type" value="rectangle">
+                            <span>Cameron Diaz, Keira Knightley (straight figure)</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="celebrity-type" value="round">
+                            <span>Queen Latifah, Melissa McCarthy (fuller midsection)</span>
+                        </label>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn btn-secondary" id="prev10">Previous</button>
+                        <div>
+                            <button class="btn btn-primary" id="calculate">Calculate My Body Shape</button>
+                            <button class="btn btn-refresh" id="refresh10">Refresh</button>
                         </div>
                     </div>
                 </div>
@@ -485,13 +657,31 @@
             const step2 = document.getElementById('step2');
             const step3 = document.getElementById('step3');
             const step4 = document.getElementById('step4');
+            const step5 = document.getElementById('step5');
+            const step6 = document.getElementById('step6');
+            const step7 = document.getElementById('step7');
+            const step8 = document.getElementById('step8');
+            const step9 = document.getElementById('step9');
+            const step10 = document.getElementById('step10');
             
             const next1 = document.getElementById('next1');
             const next2 = document.getElementById('next2');
             const next3 = document.getElementById('next3');
+            const next4 = document.getElementById('next4');
+            const next5 = document.getElementById('next5');
+            const next6 = document.getElementById('next6');
+            const next7 = document.getElementById('next7');
+            const next8 = document.getElementById('next8');
+            const next9 = document.getElementById('next9');
             const prev2 = document.getElementById('prev2');
             const prev3 = document.getElementById('prev3');
             const prev4 = document.getElementById('prev4');
+            const prev5 = document.getElementById('prev5');
+            const prev6 = document.getElementById('prev6');
+            const prev7 = document.getElementById('prev7');
+            const prev8 = document.getElementById('prev8');
+            const prev9 = document.getElementById('prev9');
+            const prev10 = document.getElementById('prev10');
             const calculateBtn = document.getElementById('calculate');
             const restartBtn = document.getElementById('restart');
             
@@ -500,6 +690,12 @@
             const refresh2 = document.getElementById('refresh2');
             const refresh3 = document.getElementById('refresh3');
             const refresh4 = document.getElementById('refresh4');
+            const refresh5 = document.getElementById('refresh5');
+            const refresh6 = document.getElementById('refresh6');
+            const refresh7 = document.getElementById('refresh7');
+            const refresh8 = document.getElementById('refresh8');
+            const refresh9 = document.getElementById('refresh9');
+            const refresh10 = document.getElementById('refresh10');
             const refreshResults = document.getElementById('refreshResults');
             
             const progressSteps = document.querySelectorAll('.progress-step');
@@ -509,7 +705,13 @@
                 waistHip: '',
                 shoulderHip: '',
                 bustWaist: '',
-                weightDist: ''
+                weightDist: '',
+                proportions: '',
+                legLength: '',
+                armLength: '',
+                height: '',
+                boneStructure: '',
+                celebrityType: ''
             };
             
             // Event Listeners
@@ -559,6 +761,78 @@
                 }
             });
             
+            next4.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="weight-dist"]:checked');
+                if (selected) {
+                    formData.weightDist = selected.value;
+                    step4.classList.remove('active');
+                    step5.classList.add('active');
+                    updateProgress(5);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
+            next5.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="proportions"]:checked');
+                if (selected) {
+                    formData.proportions = selected.value;
+                    step5.classList.remove('active');
+                    step6.classList.add('active');
+                    updateProgress(6);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
+            next6.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="leg-length"]:checked');
+                if (selected) {
+                    formData.legLength = selected.value;
+                    step6.classList.remove('active');
+                    step7.classList.add('active');
+                    updateProgress(7);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
+            next7.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="arm-length"]:checked');
+                if (selected) {
+                    formData.armLength = selected.value;
+                    step7.classList.remove('active');
+                    step8.classList.add('active');
+                    updateProgress(8);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
+            next8.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="height"]:checked');
+                if (selected) {
+                    formData.height = selected.value;
+                    step8.classList.remove('active');
+                    step9.classList.add('active');
+                    updateProgress(9);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
+            next9.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="bone-structure"]:checked');
+                if (selected) {
+                    formData.boneStructure = selected.value;
+                    step9.classList.remove('active');
+                    step10.classList.add('active');
+                    updateProgress(10);
+                } else {
+                    alert('Please select an option to continue.');
+                }
+            });
+            
             prev2.addEventListener('click', () => {
                 step2.classList.remove('active');
                 step1.classList.add('active');
@@ -577,10 +851,46 @@
                 updateProgress(3);
             });
             
+            prev5.addEventListener('click', () => {
+                step5.classList.remove('active');
+                step4.classList.add('active');
+                updateProgress(4);
+            });
+            
+            prev6.addEventListener('click', () => {
+                step6.classList.remove('active');
+                step5.classList.add('active');
+                updateProgress(5);
+            });
+            
+            prev7.addEventListener('click', () => {
+                step7.classList.remove('active');
+                step6.classList.add('active');
+                updateProgress(6);
+            });
+            
+            prev8.addEventListener('click', () => {
+                step8.classList.remove('active');
+                step7.classList.add('active');
+                updateProgress(7);
+            });
+            
+            prev9.addEventListener('click', () => {
+                step9.classList.remove('active');
+                step8.classList.add('active');
+                updateProgress(8);
+            });
+            
+            prev10.addEventListener('click', () => {
+                step10.classList.remove('active');
+                step9.classList.add('active');
+                updateProgress(9);
+            });
+            
             calculateBtn.addEventListener('click', () => {
-                const selected = document.querySelector('input[name="weight-dist"]:checked');
+                const selected = document.querySelector('input[name="celebrity-type"]:checked');
                 if (selected) {
-                    formData.weightDist = selected.value;
+                    formData.celebrityType = selected.value;
                     calculateBodyShape();
                 } else {
                     alert('Please select an option to continue.');
@@ -608,6 +918,12 @@
                 step2.classList.remove('active');
                 step3.classList.remove('active');
                 step4.classList.remove('active');
+                step5.classList.remove('active');
+                step6.classList.remove('active');
+                step7.classList.remove('active');
+                step8.classList.remove('active');
+                step9.classList.remove('active');
+                step10.classList.remove('active');
                 step1.classList.add('active');
                 
                 // Reset progress
@@ -630,6 +946,12 @@
             refresh2.addEventListener('click', refreshQuiz);
             refresh3.addEventListener('click', refreshQuiz);
             refresh4.addEventListener('click', refreshQuiz);
+            refresh5.addEventListener('click', refreshQuiz);
+            refresh6.addEventListener('click', refreshQuiz);
+            refresh7.addEventListener('click', refreshQuiz);
+            refresh8.addEventListener('click', refreshQuiz);
+            refresh9.addEventListener('click', refreshQuiz);
+            refresh10.addEventListener('click', refreshQuiz);
             refreshResults.addEventListener('click', refreshQuiz);
             
             restartBtn.addEventListener('click', () => {
@@ -649,7 +971,7 @@
                 });
                 
                 // Show first step
-                step4.classList.remove('active');
+                step10.classList.remove('active');
                 step1.classList.add('active');
                 bodyShapeResults.style.display = 'none';
                 bodyShapeForm.style.display = 'block';
@@ -702,37 +1024,69 @@
                 let icon = '';
                 
                 // Body shape determination logic
-                if (formData.waistHip === 'significantly-smaller' && 
-                    formData.shoulderHip === 'same' && 
-                    formData.bustWaist === 'larger') {
-                    bodyShape = 'Hourglass';
-                    description = 'Your bust and hips are well balanced with a clearly defined waist. This is considered the ideal body shape.';
-                    icon = '⏳';
-                } else if (formData.waistHip === 'slightly-smaller' && 
-                          formData.shoulderHip === 'narrower') {
-                    bodyShape = 'Pear';
-                    description = 'Your hips are wider than your shoulders with a defined waist. Weight tends to accumulate in the lower body.';
-                    icon = '🍐';
-                } else if (formData.waistHip === 'same' && 
-                          formData.shoulderHip === 'broader') {
-                    bodyShape = 'Inverted Triangle';
-                    description = 'Your shoulders are broader than your hips with little waist definition. You tend to carry weight in your upper body.';
-                    icon = '🔻';
-                } else if (formData.waistHip === 'bigger' || 
-                          formData.weightDist === 'middle') {
-                    bodyShape = 'Round';
-                    description = 'Your waist is the widest part of your body with weight concentrated in the midsection.';
-                    icon = '⭕';
-                } else if (formData.waistHip === 'same' && 
-                          formData.shoulderHip === 'same') {
-                    bodyShape = 'Rectangle';
-                    description = 'Your bust, waist, and hips are fairly equal in measurement with minimal curves.';
-                    icon = '📏';
+                if (formData.celebrityType) {
+                    // Use celebrity type as primary indicator
+                    switch(formData.celebrityType) {
+                        case 'hourglass':
+                            bodyShape = 'Hourglass';
+                            description = 'Your bust and hips are well balanced with a clearly defined waist. This is considered the ideal body shape.';
+                            icon = '⏳';
+                            break;
+                        case 'pear':
+                            bodyShape = 'Pear';
+                            description = 'Your hips are wider than your shoulders with a defined waist. Weight tends to accumulate in the lower body.';
+                            icon = '🍐';
+                            break;
+                        case 'inverted-triangle':
+                            bodyShape = 'Inverted Triangle';
+                            description = 'Your shoulders are broader than your hips with little waist definition. You tend to carry weight in your upper body.';
+                            icon = '🔻';
+                            break;
+                        case 'rectangle':
+                            bodyShape = 'Rectangle';
+                            description = 'Your bust, waist, and hips are fairly equal in measurement with minimal curves.';
+                            icon = '📏';
+                            break;
+                        case 'round':
+                            bodyShape = 'Round';
+                            description = 'Your waist is the widest part of your body with weight concentrated in the midsection.';
+                            icon = '⭕';
+                            break;
+                    }
                 } else {
-                    // Default case
-                    bodyShape = 'Hourglass';
-                    description = 'Based on your measurements, you appear to have a balanced figure with a defined waist.';
-                    icon = '⏳';
+                    // Fallback to original logic if celebrity type not selected
+                    if (formData.waistHip === 'significantly-smaller' && 
+                        formData.shoulderHip === 'same' && 
+                        formData.bustWaist === 'larger') {
+                        bodyShape = 'Hourglass';
+                        description = 'Your bust and hips are well balanced with a clearly defined waist. This is considered the ideal body shape.';
+                        icon = '⏳';
+                    } else if (formData.waistHip === 'slightly-smaller' && 
+                              formData.shoulderHip === 'narrower') {
+                        bodyShape = 'Pear';
+                        description = 'Your hips are wider than your shoulders with a defined waist. Weight tends to accumulate in the lower body.';
+                        icon = '🍐';
+                    } else if (formData.waistHip === 'same' && 
+                              formData.shoulderHip === 'broader') {
+                        bodyShape = 'Inverted Triangle';
+                        description = 'Your shoulders are broader than your hips with little waist definition. You tend to carry weight in your upper body.';
+                        icon = '🔻';
+                    } else if (formData.waistHip === 'bigger' || 
+                              formData.weightDist === 'middle') {
+                        bodyShape = 'Round';
+                        description = 'Your waist is the widest part of your body with weight concentrated in the midsection.';
+                        icon = '⭕';
+                    } else if (formData.waistHip === 'same' && 
+                              formData.shoulderHip === 'same') {
+                        bodyShape = 'Rectangle';
+                        description = 'Your bust, waist, and hips are fairly equal in measurement with minimal curves.';
+                        icon = '📏';
+                    } else {
+                        // Default case
+                        bodyShape = 'Hourglass';
+                        description = 'Based on your measurements, you appear to have a balanced figure with a defined waist.';
+                        icon = '⏳';
+                    }
                 }
                 
                 // Update results
